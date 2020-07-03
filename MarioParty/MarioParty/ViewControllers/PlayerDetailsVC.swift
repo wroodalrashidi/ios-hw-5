@@ -21,7 +21,7 @@ class PlayerDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = SelectedPlayer.name
-        imageView.image = UIImage(named: SelectedPlayer.name)
+        imageView.loadGif(name: SelectedPlayer.name)
         backgroundImageView.image = UIImage(named: SelectedPlayer.bgName())
 
         // Do any additional setup after loading the view.

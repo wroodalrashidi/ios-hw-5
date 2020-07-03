@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     
     @IBAction func randomPlayer(_ sender: Any) {
         let randomPlayer = players.randomElement()!
-        playerImageView.image = UIImage(named: randomPlayer.name)
+        playerImageView.loadGif(name: randomPlayer.name)
         playMusic(musicName: randomPlayer.musicNmae())
         SelectedPlayer = randomPlayer
     }
